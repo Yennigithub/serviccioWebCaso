@@ -22,6 +22,7 @@ app.use(express.json());
 app.get("/",(req,res) => res.sendFile(__dirname +"/pages/login.html"));
 app.get("/register",(req,res) => res.sendFile(__dirname +"/pages/register.html"));
 app.get("/admin",(req,res)=> res.sendFile(__dirname +"/pages/admin.html"));
+app.get("/servicios",(req,res)=> res.sendFile(__dirname +"/pages/servicios.html"));
 app.post("/api/login",authentication.login);
 app.post("/api/register",authentication.register);
 
